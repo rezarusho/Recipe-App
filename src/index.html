@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe App</title>
+    <link rel="stylesheet" href="/dist/output.css" />
+  </head>
+  <body class="bg-gray-800">
+    <div class="container mx-auto text-center">
+      <h1 class="text-[42px] font-semibold text-white my-[40px]">
+        Search for your meal 🍟
+      </h1>
+    </div>
+    <div
+      class="bg-white w-2/5 mx-auto px-[15px] py-[10px] border rounded-[8px] flex justify-between gap-[15px]"
+    >
+      <input type="text" placeholder="Ex. Chicken..." 
+      class="text-[18px] w-full px-3 rounded-[5px] border-transparent"
+      id="input"
+       />
+      <button class="src-btn" id="search">Search</button>
+    </div>
+    <div
+      class="container mx-auto border border-gray-600 min-h-[600px] rounded-[20px] mt-10 p-4 mb-[40px]"
+    >
+      <h2
+        id="noMeal"
+        class="text-[30px] text-center text-gray-300 mt-10 font-medium capitalize"
+      >
+        No meal to show! 😞
+      </h2>
+
+      <div class="meal-wrapper grid grid-cols-4 gap-4">
+        <!-- <div class="meal-box border border-gray-500 rounded-xl">
+          <img
+            src="https://www.themealdb.com/images/media/meals/7n8su21699013057.jpg"
+            alt=""
+            class="rounded h-[210px] w-full object-cover"
+          />
+        <div class="p-3">
+          <h3 class="heading">Leblebi Soup</h3>
+          <p class="text-gray-200 my-2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est iure
+            maxime quos impedit provident, nobis quia. Omnis voluptate
+            perspiciatis fuga!
+          </p>
+          <p class="text-gray-500 italic"><span>Tunisian</span><span>Vegetarian</span></p>
+          <div class="my-4">
+            <a href="#" class="btn">Watch</a>
+            <button class="px-3 text-white">View Recipe</button>
+            </div>
+        </div>
+      </div> -->
+    </div>
+
+    <div>
+        <div class="flex items-center justify-center min-h-100vh">
+            <div id="details" class="overlay fixed top-0 left-0 w-full h-full flex items-center justify-center bg-[#0000005e] invisible">
+                <!-- <div class="popup bg-white w-[70%] min-h-[500px] p-10">
+                    <h2 class="text-2xl font-bold mb-4">Popup Title</h2>
+                    <p class="mb-6">Popup content goes here</p>
+                    <button class="px-4 py-2 bg-gray-800 text-white rounded">Close</button>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
